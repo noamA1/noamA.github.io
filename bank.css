@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.accounts {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+
+.accounts-list__container,
+.details__list {
+  /* width: 100%; */
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 262px);
+  grid-template-rows: repeat(4, 110px);
+}
+
+.accounts-list__item,
+.details__list--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid #4b4bd1af;
+  margin: 5px 7.5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #c6c4e4;
+}
+
+.error-message {
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+}
